@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Programacion Multimedia</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="telefono">Teléfono</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
