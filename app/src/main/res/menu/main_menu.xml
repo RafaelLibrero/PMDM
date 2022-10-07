@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_biography"
+            android:title="BIOGRAFÍA" />
+        <item
+            android:id="@+id/nav_sculpture"
+            android:title="ESCULTURA" />
+        <item
+            android:id="@+id/nav_paint"
+            android:title="PINTURA" />
+        <item
+            android:id="@+id/nav_architecture"
+            android:title="ARQUITECTURA" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="OPCIONES">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_ayuda"
+                    android:title="AYUDA"
+                    android:icon="@drawable/ic_baseline_question_mark_24"/>
+
+                <item
+                    android:id="@+id/nav_search"
+                    android:title="BÚSQUEDA" />
+
+                <item
+                    android:id="@+id/nav_salida"
+                    android:title="SALIDA"
+                    android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+
+            </menu>
+
+        </item>
+
+
+
+    </group>
+
+</menu>
