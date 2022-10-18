@@ -10,5 +10,8 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="drawer_username">Nombre: %1$s</string>
+    <string name="drawer_email">Email: %1$s</string>
+    <string name="drawer_phone">Teléfono: %1$s</string>
 
 </resources>
