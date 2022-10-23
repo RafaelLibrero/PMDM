@@ -1,109 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16sp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:weightSum="100"
+        android:layout_marginBottom="15sp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:layout_weight="0"
-            android:layout_marginBottom="15sp"
-            android:layout_marginEnd="15sp"
-            android:src="@drawable/ic_name_foreground" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:layout_marginStart="8sp"
+            android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15sp"
-            android:layout_weight="1" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="56sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_assignment_ind_30"
+                android:contentDescription="@string/form_username"/>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etName"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="56sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_mail_30"
+                android:contentDescription="@string/form_email"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="56sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_phone_30"
+                android:contentDescription="@string/form_phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="86"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:ems="15"
-                android:backgroundTint="@color/white"
-                android:hint="@string/nombre"
-                android:inputType="textPersonName" />
+                android:layout_height="wrap_content">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/form_username"
+                    android:inputType="textPersonName" />
 
-    </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:layout_weight="0"
-            android:layout_marginEnd="15sp"
-            android:src="@drawable/ic_mail_foreground" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15sp"
-            android:layout_weight="1" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmail"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5sp"
-                android:ems="15"
-                android:backgroundTint="@color/white"
-                android:hint="@string/correo"
-                android:inputType="textEmailAddress" />
+                android:layout_height="wrap_content">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/form_email"
+                    android:inputType="textEmailAddress" />
 
-    </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15sp"
-            android:layout_weight="0"
-            android:src="@drawable/ic_phone_foreground" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15sp"
-            android:layout_weight="1" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPhone"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/telefono"
-                android:layout_weight="1"
-                android:ems="15"
-                android:backgroundTint="@color/white"
-                android:inputType="phone" />
+                android:layout_height="wrap_content">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/form_phone"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -111,22 +105,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="5sp"
-        android:paddingEnd="5sp" >
+        android:paddingEnd="5sp">
 
         <Button
             android:id="@+id/btCancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="3sp"
+            android:layout_weight="1"
             android:text="@string/cancelar" />
 
         <Button
             android:id="@+id/btAccept"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="3sp"
+            android:layout_weight="1"
             android:text="@string/aceptar" />
 
     </LinearLayout>
