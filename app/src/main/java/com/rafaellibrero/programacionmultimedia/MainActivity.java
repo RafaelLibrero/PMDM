@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else{
-                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                    Intent intent = new Intent(MainActivity.this, DrawerNavigation.class);
                     intent.putExtra("nombre", entradaName);
                     intent.putExtra("email", entradaMail);
                     intent.putExtra("telefono", entradaNumber);

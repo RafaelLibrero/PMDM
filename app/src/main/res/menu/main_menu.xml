@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_biography"
+            android:title="@string/menu_biography"
+            android:icon="@drawable/ic_baseline_auto_stories_24"/>
+        <item
+            android:id="@+id/nav_sculpture"
+            android:title="@string/menu_sculpture"
+            android:icon="@drawable/sculpture"/>
+        <item
+            android:id="@+id/nav_paint"
+            android:title="@string/menu_painting"
+            android:icon="@drawable/ic_baseline_brush_24"/>
+        <item
+            android:id="@+id/nav_architecture"
+            android:title="@string/menu_architecture"
+            android:icon="@drawable/ic_baseline_architecture_24"/>
+
+    </group>
+
+    <item android:title="@string/menu_options">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_ayuda"
+                    android:title="@string/menu_help"
+                    android:icon="@drawable/ic_baseline_question_mark_24"/>
+
+                <item
+                    android:id="@+id/nav_search"
+                    android:title="@string/menu_search"
+                    android:icon="@drawable/ic_baseline_my_location_24"/>
+
+                <item
+                    android:id="@+id/nav_salida"
+                    android:title="@string/menu_exit"
+                    android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -9,8 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgramacionMultimedia">
         <activity
-            android:name=".SecondActivity"
-            android:exported="false">
+            android:name=".DrawerNavigation"
+            android:exported="false"
+            android:theme="@style/Theme.ProgramacionMultimedia.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
