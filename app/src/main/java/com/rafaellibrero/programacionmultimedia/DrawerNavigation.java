@@ -41,7 +41,7 @@ public class DrawerNavigation extends AppCompatActivity implements NavigationVie
         valor = getIntent().getStringExtra("telefono");
         number.setText(getString(R.string.drawer_phone,valor));
 
-        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle
                 (this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);

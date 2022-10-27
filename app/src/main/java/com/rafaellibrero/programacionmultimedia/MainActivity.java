@@ -1,6 +1,5 @@
 package com.rafaellibrero.programacionmultimedia;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -20,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.toolbar_title_layout);
         name=findViewById(R.id.etName);
         mail=findViewById(R.id.etEmail);
         number=findViewById(R.id.etPhone);
