@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgramacionMultimedia">
         <activity
+            android:name=".PictureActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DrawerNavigation"
             android:exported="false"
             android:theme="@style/Theme.ProgramacionMultimedia.NoActionBar">
