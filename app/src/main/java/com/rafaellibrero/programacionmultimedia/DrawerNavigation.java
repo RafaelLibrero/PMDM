@@ -11,9 +11,9 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
+import com.rafaellibrero.programacionmultimedia.ui.PictureActivity;
 
 public class DrawerNavigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -59,7 +59,7 @@ public class DrawerNavigation extends AppCompatActivity implements NavigationVie
 
         switch (item.getItemId()){
             case R.id.nav_paint:
-                Intent intent = new Intent(DrawerNavigation.this,PictureActivity.class);
+                Intent intent = new Intent(DrawerNavigation.this, PictureActivity.class);
                 startActivity(intent);
                 break;
         }

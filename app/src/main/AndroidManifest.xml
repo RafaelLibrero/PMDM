@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgramacionMultimedia">
         <activity
-            android:name=".PictureActivity"
+            android:name=".ui.PictureActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
