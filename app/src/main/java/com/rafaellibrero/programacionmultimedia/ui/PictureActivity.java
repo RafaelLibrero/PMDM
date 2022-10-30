@@ -1,10 +1,14 @@
 package com.rafaellibrero.programacionmultimedia.ui;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.rafaellibrero.programacionmultimedia.R;
 import com.rafaellibrero.programacionmultimedia.ui.recycler.ListElement;
@@ -32,6 +36,20 @@ public class PictureActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setHasFixedSize(true);
+
+        recyclerViewAdapter.setListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CharSequence[] opciones={"Ok"};
+                AlertDialog.Builder datos = new AlertDialog.Builder(PictureActivity.this);
+                datos.setTitle(elements.get(recyclerView.getChildAdapterPosition(view)).getName());
+                datos.setMessage("\nAño de realización: "+elements.get(recyclerView.getChildAdapterPosition(view)).getYear()+
+                        "\nUbicación: "+elements.get(recyclerView.getChildAdapterPosition(view)).getUbication());
+                datos.show();
+            }
+        });
+
+
 
     }
 }

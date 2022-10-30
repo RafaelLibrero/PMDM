@@ -12,9 +12,12 @@ import com.rafaellibrero.programacionmultimedia.R;
 
 import java.util.ArrayList;
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.MyViewHolder> {
+public class RVAdapter
+        extends RecyclerView.Adapter<RVAdapter.MyViewHolder>
+        implements  View.OnClickListener {
 
     ArrayList<ListElement> list;
+    private View.OnClickListener listener;
 
     public RVAdapter(ArrayList<ListElement> list) {
         this.list = list;
@@ -24,6 +27,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.MyViewHolder> {
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
+        view.setOnClickListener(this);
         return new MyViewHolder(view);
     }
 
@@ -35,6 +39,16 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.MyViewHolder> {
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+    public void setListener(View.OnClickListener listener){
+        this.listener = listener;
+    }
+
+    public void onClick(View view) {
+        if(listener!= null){
+            listener.onClick(view);
+        }
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
