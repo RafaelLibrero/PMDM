@@ -1,4 +1,4 @@
-package com.rafaellibrero.programacionmultimedia.ui.recycler;
+package com.rafaellibrero.programacionmultimedia.ui.picture.recycler;
 
 import java.io.Serializable;
 

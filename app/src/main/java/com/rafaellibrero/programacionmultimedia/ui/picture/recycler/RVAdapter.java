@@ -1,4 +1,4 @@
-package com.rafaellibrero.programacionmultimedia.ui.recycler;
+package com.rafaellibrero.programacionmultimedia.ui.picture.recycler;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +16,7 @@ public class RVAdapter
         extends RecyclerView.Adapter<RVAdapter.MyViewHolder>
         implements  View.OnClickListener {
 
-    ArrayList<ListElement> list;
+    private ArrayList<ListElement> list;
     private View.OnClickListener listener;
 
     public RVAdapter(ArrayList<ListElement> list) {
@@ -26,7 +26,7 @@ public class RVAdapter
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_picture, parent, false);
         view.setOnClickListener(this);
         return new MyViewHolder(view);
     }

@@ -13,6 +13,7 @@
     <string name="drawer_username">Nombre: %1$s</string>
     <string name="drawer_email">Email: %1$s</string>
     <string name="drawer_phone">Teléfono: %1$s</string>
+
     <string name="menu_biography">BIOGRAFÍA</string>
     <string name="menu_sculpture">ESCULTURA</string>
     <string name="menu_painting">PINTURA</string>
@@ -21,5 +22,11 @@
     <string name="menu_help">AYUDA</string>
     <string name="menu_search">BÚSQUEDA</string>
     <string name="menu_exit">SALIDA</string>
+
+    <string name="arch_NumColegiado">Número de colegiado: %1$s</string>
+    <string name="arch_Nombre">Nombre: %1$s</string>
+    <string name="arch_Especialidad">Especialidad: %1$s</string>
+    <string name="arch_EstaActivo">Está activo: %1$s</string>
+    <string name="arch_FechaDeNacimiento">Fecha de nacimiento: %1$s</string>
 
 </resources>

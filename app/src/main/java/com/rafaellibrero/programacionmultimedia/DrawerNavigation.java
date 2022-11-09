@@ -13,7 +13,8 @@ import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
-import com.rafaellibrero.programacionmultimedia.ui.PictureActivity;
+import com.rafaellibrero.programacionmultimedia.ui.architecture.ArchitectureActivity;
+import com.rafaellibrero.programacionmultimedia.ui.picture.PictureActivity;
 
 public class DrawerNavigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -57,9 +58,15 @@ public class DrawerNavigation extends AppCompatActivity implements NavigationVie
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+        Intent intent;
+
         switch (item.getItemId()){
             case R.id.nav_paint:
-                Intent intent = new Intent(DrawerNavigation.this, PictureActivity.class);
+                intent = new Intent(DrawerNavigation.this, PictureActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_architecture:
+                intent = new Intent(DrawerNavigation.this, ArchitectureActivity.class);
                 startActivity(intent);
                 break;
         }

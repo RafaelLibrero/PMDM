@@ -1,4 +1,4 @@
-package com.rafaellibrero.programacionmultimedia.ui;
+package com.rafaellibrero.programacionmultimedia.ui.picture;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,14 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.rafaellibrero.programacionmultimedia.R;
-import com.rafaellibrero.programacionmultimedia.ui.recycler.ListElement;
-import com.rafaellibrero.programacionmultimedia.ui.recycler.RVAdapter;
+import com.rafaellibrero.programacionmultimedia.ui.picture.recycler.ListElement;
+import com.rafaellibrero.programacionmultimedia.ui.picture.recycler.RVAdapter;
 
 import java.util.ArrayList;
 
 public class PictureActivity extends AppCompatActivity {
 
-    ArrayList<ListElement> elements;
+    private ArrayList<ListElement> elements;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
