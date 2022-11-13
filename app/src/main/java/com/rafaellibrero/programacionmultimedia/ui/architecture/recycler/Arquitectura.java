@@ -2,40 +2,40 @@ package com.rafaellibrero.programacionmultimedia.ui.architecture.recycler;
 
 public class Arquitectura {
 
-    private final int NumColegiado;
-    private final String Nombre;
-    private final String Especialidad;
-    private final boolean EstaActivo;
-    private final int FechaNacimiento;
+    private final int numColegiado;
+    private final String nombre;
+    private final String especialidad;
+    private final boolean estaActivo;
+    private final int fechaNacimiento;
 
     public Arquitectura
             (int NumColegiado, String Nombre, String Especialidad,
              boolean EstaActivo, int FechaNacimiento) {
-        this.NumColegiado = NumColegiado;
-        this.Nombre = Nombre;
-        this.Especialidad = Especialidad;
-        this.EstaActivo = EstaActivo;
-        this.FechaNacimiento = FechaNacimiento;
+        this.numColegiado = NumColegiado;
+        this.nombre = Nombre;
+        this.especialidad = Especialidad;
+        this.estaActivo = EstaActivo;
+        this.fechaNacimiento = FechaNacimiento;
     }
 
     public String getNumColegiado(){
-        return String.valueOf(NumColegiado);
+        return String.valueOf(numColegiado);
     }
 
     public String getNombre(){
-        return Nombre;
+        return nombre;
     }
 
     public String getEspecialidad(){
-        return Especialidad;
+        return especialidad;
     }
 
     public String getEstaActivo(){
-        return String.valueOf(EstaActivo);
+        return String.valueOf(estaActivo);
     }
 
     public String getFechaNacimiento(){
-        return String.valueOf(FechaNacimiento);
+        return String.valueOf(fechaNacimiento);
     }
 }
 

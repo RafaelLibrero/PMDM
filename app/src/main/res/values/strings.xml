@@ -23,10 +23,10 @@
     <string name="menu_search">BÚSQUEDA</string>
     <string name="menu_exit">SALIDA</string>
 
-    <string name="arch_NumColegiado">Número de colegiado: %1$s</string>
-    <string name="arch_Nombre">Nombre: %1$s</string>
-    <string name="arch_Especialidad">Especialidad: %1$s</string>
-    <string name="arch_EstaActivo">Está activo: %1$s</string>
-    <string name="arch_FechaDeNacimiento">Fecha de nacimiento: %1$s</string>
+    <string name="arch_numColegiado">Número de colegiado: %1$s</string>
+    <string name="arch_nombre">Nombre: %1$s</string>
+    <string name="arch_especialidad">Especialidad: %1$s</string>
+    <string name="arch_estaActivo">Está activo: %1$s</string>
+    <string name="arch_fechaNacimiento">Fecha de nacimiento: %1$s</string>
 
 </resources>

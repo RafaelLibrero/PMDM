@@ -23,6 +23,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         this.mContext = context;
     }
 
+    @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
@@ -32,11 +33,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.numColegiado.setText(mContext.getString(R.string.arch_NumColegiado, list.get(position).getNumColegiado()));
-        holder.nombre.setText(mContext.getString(R.string.arch_Nombre, list.get(position).getNombre()));
-        holder.especialidad.setText(mContext.getString(R.string.arch_Especialidad, list.get(position).getEspecialidad()));
-        holder.estaActivo.setText(mContext.getString(R.string.arch_EstaActivo, list.get(position).getEstaActivo()));
-        holder.fechaNacimiento.setText(mContext.getString(R.string.arch_FechaDeNacimiento, list.get(position).getFechaNacimiento()));
+        holder.numColegiado.setText(mContext.getString(R.string.arch_numColegiado, list.get(position).getNumColegiado()));
+        holder.nombre.setText(mContext.getString(R.string.arch_nombre, list.get(position).getNombre()));
+        holder.especialidad.setText(mContext.getString(R.string.arch_especialidad, list.get(position).getEspecialidad()));
+        holder.estaActivo.setText(mContext.getString(R.string.arch_estaActivo, list.get(position).getEstaActivo()));
+        holder.fechaNacimiento.setText(mContext.getString(R.string.arch_fechaNacimiento, list.get(position).getFechaNacimiento()));
     }
 
     @Override
@@ -44,7 +45,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         return list.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         private TextView numColegiado;
         private TextView nombre;
