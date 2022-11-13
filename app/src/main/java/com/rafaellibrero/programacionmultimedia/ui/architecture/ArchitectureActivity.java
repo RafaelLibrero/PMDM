@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -76,11 +77,12 @@ public class ArchitectureActivity extends AppCompatActivity {
 
         InputStream inputStream = null;
         StringBuilder builder = new StringBuilder();
+        AssetManager assetManager = getAssets();
 
         try {
 
             String jsonString;
-            inputStream = getResources().openRawResource(R.raw.arquitectura);
+            inputStream = assetManager.open("json/arquitectura.json");
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(inputStream, StandardCharsets.UTF_8));
 
