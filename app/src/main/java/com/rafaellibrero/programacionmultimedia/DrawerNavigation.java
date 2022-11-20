@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 import com.rafaellibrero.programacionmultimedia.ui.architecture.ArchitectureActivity;
+import com.rafaellibrero.programacionmultimedia.ui.help.HelpActivity;
 import com.rafaellibrero.programacionmultimedia.ui.picture.PictureActivity;
 
 public class DrawerNavigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -67,6 +68,10 @@ public class DrawerNavigation extends AppCompatActivity implements NavigationVie
                 break;
             case R.id.nav_architecture:
                 intent = new Intent(DrawerNavigation.this, ArchitectureActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_ayuda:
+                intent = new Intent(DrawerNavigation.this, HelpActivity.class);
                 startActivity(intent);
                 break;
         }
