@@ -58,9 +58,7 @@ public class HelpActivity extends AppCompatActivity {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HelpActivity.this, DrawerNavigation.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 
