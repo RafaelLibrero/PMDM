@@ -29,4 +29,7 @@
     <string name="arch_estaActivo">Está activo: %1$s</string>
     <string name="arch_fechaNacimiento">Fecha de nacimiento: %1$s</string>
 
+    <string name="volver">Volver</string>
+    <string name="iniciar">Iniciar</string>
+
 </resources>
