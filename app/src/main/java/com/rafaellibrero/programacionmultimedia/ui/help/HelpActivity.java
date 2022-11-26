@@ -20,8 +20,6 @@ public class HelpActivity extends AppCompatActivity {
     private VideoView videoView;
     private MediaController mediaController;
     private Button iniciar, volver;
-    int position = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +29,7 @@ public class HelpActivity extends AppCompatActivity {
         iniciar = findViewById(R.id.btIniciar);
         volver = findViewById(R.id.btVolver);
 
-        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.videoplayback));
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.me_at_the_zoo));
         videoView.start();
 
 
